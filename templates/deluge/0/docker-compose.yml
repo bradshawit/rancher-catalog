@@ -2,7 +2,7 @@ deluge:
   image: bradshawit/docker-deluge:latest
   command: 
   expose: 
-   - 8112:8112
+   - ${public_port}:8112
   environment:
     CLOUDFLARE_EMAIL: ${CLOUDFLARE_EMAIL}
     CLOUDFLARE_KEY: ${CLOUDFLARE_KEY}
