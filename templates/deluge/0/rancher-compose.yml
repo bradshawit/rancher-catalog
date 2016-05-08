@@ -4,9 +4,9 @@
   description: "Deluge torrent client"
   questions:
     - variable: public_port
-      description: "public port to access the blog"
+      description: "Public Port to access Deluge Web Client"
       label: "Public Port"
       required: true
-      default: "80"
+      default: "8112"
       type: "int"
-ghost:
+deluge:
