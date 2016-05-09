@@ -3,11 +3,23 @@
   version: "v0.8"
   description: "Deluge torrent client"
   questions:
-    - variable: public_port
+    - variable: PUBLIC_PORT
       description: "Public Port to access Deluge Web Client"
       label: "Public Port"
       required: true
       default: "8112"
       type: "int"
+    - variable: DOWNLOADS_DIR
+      description: "Path to yout Downloads Share"
+      label: "Downloads Share Path"
+      required: true
+      default: "/downloads"
+      type: "string"
+    - variable: DELUGE_DATA_DIR
+      description: "Path to store your Deluge configuration data"
+      label: "Deluge data directory"
+      required: true
+      default: "/deluge"
+      type: "string"
 Deluge:
   scale: 1
