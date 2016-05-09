@@ -2,7 +2,7 @@ Deluge:
   ports:
   - 53160:53160/tcp
   - 53160:53160/udp
-  - 8112:8112/tcp
+  - ${public_port}:8112/tcp
   - 58846:58846/tcp
   log_driver: ''
   labels:
