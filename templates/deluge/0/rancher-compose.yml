@@ -9,4 +9,5 @@
       required: true
       default: "8112"
       type: "int"
-deluge:
+Deluge:
+  scale: 1
