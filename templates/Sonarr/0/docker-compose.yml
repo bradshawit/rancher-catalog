@@ -1,6 +1,6 @@
 Sonarr:
   ports:
-  - 8989:8989/tcp
+  - ${PUBLIC_PORT}:8989/tcp
   log_driver: ''
   labels:
     io.rancher.container.pull_image: always
@@ -8,8 +8,8 @@ Sonarr:
   log_opt: {}
   image: bradshawit/docker-sonarr:latest
   volumes:
-  - /sonarr:/data/sonarr
-  - /tv:/data/tv
-  - /downloads:/data/downloads
-  - /torrentfiles:/data/torrentfiles
+  - ${SONARR_DATA_DIR}:/data/sonarr
+  - ${TV_DIR}:/data/tv
+  - ${DOWNLOADS_DIR}:/data/downloads
+  - ${TORRENT_DIR}:/data/torrentfiles
   stdin_open: true
