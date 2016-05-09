@@ -2,7 +2,7 @@ Deluge:
   ports:
   - 53160:53160/tcp
   - 53160:53160/udp
-  - ${public_port}:8112/tcp
+  - ${PUBLIC_PORT}:8112/tcp
   - 58846:58846/tcp
   log_driver: ''
   labels:
@@ -11,6 +11,6 @@ Deluge:
   log_opt: {}
   image: bradshawit/deluge:latest
   volumes:
-  - /deluge:/data/deluge
-  - /downloads:/data/downloads
+  - ${DELUGE_DATA_DIR}:/data/deluge
+  - ${DOWNLOADS_DIR}:/data/downloads
   stdin_open: true
