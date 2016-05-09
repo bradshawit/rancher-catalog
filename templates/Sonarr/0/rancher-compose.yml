@@ -9,5 +9,29 @@
       required: true
       default: "8989"
       type: "int"
+    - variable: DOWNLOADS_DIR
+      description: "Path to your Downloads Share"
+      label: "Downloads Share Path"
+      required: true
+      default: "/downloads"
+      type: "string"
+    - variable: SONARR_DATA_DIR
+      description: "Path to store your Sonarr configuration data"
+      label: "Sonarr data directory"
+      required: true
+      default: "/sonarr"
+      type: "string"
+    - variable: TV_DIR
+      description: "Path to yout TV Share"
+      label: "TV Share Path"
+      required: true
+      default: "/tv"
+      type: "string"
+    - variable: TORRENT_DIR
+      description: "Path to yout Torrent Files Share"
+      label: "Torrent Files Share Path"
+      required: true
+      default: "/torrentfiles"
+      type: "string"
 Sonarr:
   scale: 1
