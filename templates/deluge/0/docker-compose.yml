@@ -1,10 +1,16 @@
-deluge:
-  image: bradshawit/docker-deluge:latest
-  command: 
-  expose: 
-   - ${public_port}:8112
-  environment:
-    CLOUDFLARE_EMAIL: ${CLOUDFLARE_EMAIL}
-    CLOUDFLARE_KEY: ${CLOUDFLARE_KEY}
-    ROOT_DOMAIN: ${ROOT_DOMAIN}
-    TTL: ${TTL}
+Deluge:
+  ports:
+  - 53160:53160/tcp
+  - 53160:53160/udp
+  - 8112:8112/tcp
+  - 58846:58846/tcp
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  log_opt: {}
+  image: bradshawit/deluge:latest
+  volumes:
+  - /deluge:/data/deluge
+  - /downloads:/data/downloads
+  stdin_open: true
