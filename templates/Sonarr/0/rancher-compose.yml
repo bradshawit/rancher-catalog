@@ -1,1 +1,13 @@
-
+.catalog:
+  name: "Sonarr"
+  version: "v0.8"
+  description: "Sonarr"
+  questions:
+    - variable: PUBLIC_PORT
+      description: "Public Port to access Sonarr"
+      label: "Public Port"
+      required: true
+      default: "8989"
+      type: "int"
+Sonarr:
+  scale: 1
