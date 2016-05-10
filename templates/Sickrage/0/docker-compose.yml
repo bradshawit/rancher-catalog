@@ -1,0 +1,15 @@
+Sonarr:
+  ports:
+  - ${PUBLIC_PORT}:8091/tcp
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  log_opt: {}
+  image: bradshawit/docker-sickrage:latest
+  volumes:
+  - ${SICKRAGE_DATA_DIR}:/data/sickrage
+  - ${TV_DIR}:/data/tv
+  - ${DOWNLOADS_DIR}:/data/downloads
+  - ${TORRENT_DIR}:/data/torrentfiles
+  stdin_open: true
