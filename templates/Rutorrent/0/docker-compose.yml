@@ -1,4 +1,4 @@
-Sickrage:
+Rutorrent:
   ports:
   - ${PUBLIC_PORT}:80/tcp
   log_driver: ''
