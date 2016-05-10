@@ -4,6 +4,8 @@ Rutorrent:
   - 9527:9527/udp
   - 45566-45576:45566-45576
   log_driver: ''
+  environment:
+    TZ: Australia/Melbourne
   labels:
     io.rancher.container.pull_image: always
   tty: true
