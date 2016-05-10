@@ -1,0 +1,31 @@
+.catalog:
+  name: "Rutorrent"
+  version: "v0.8"
+  description: "Rutorrent"
+  questions:
+    - variable: PUBLIC_PORT
+      description: "Public Port to access Rutorrent"
+      label: "Public Port"
+      required: true
+      default: "8082"
+      type: "int"
+    - variable: DOWNLOADS_DIR
+      description: "Path to your Downloads Share"
+      label: "Downloads Share Path"
+      required: true
+      default: "/downloads"
+      type: "string"
+    - variable: RUTORRENT_DATA_DIR
+      description: "Path to store your Rutorrent configuration data"
+      label: "Rutorrent data directory"
+      required: true
+      default: "/rutorrent"
+      type: "string"
+    - variable: TORRENT_DIR
+      description: "Path to yout Torrent Files Share"
+      label: "Torrent Files Share Path"
+      required: true
+      default: "/torrentfiles"
+      type: "string"
+Rutorrent:
+  scale: 1
