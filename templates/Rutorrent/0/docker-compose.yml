@@ -6,6 +6,8 @@ Rutorrent:
   log_driver: ''
   environment:
     TZ: Australia/Melbourne
+    PGID: 500
+    PUID: 500
   labels:
     io.rancher.container.pull_image: always
   tty: true
