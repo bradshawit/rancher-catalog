@@ -1,4 +1,4 @@
-Sonarr:
+Sickrage:
   ports:
   - ${PUBLIC_PORT}:8091/tcp
   log_driver: ''
