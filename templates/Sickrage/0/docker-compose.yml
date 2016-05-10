@@ -1,6 +1,6 @@
 Sickrage:
   ports:
-  - ${PUBLIC_PORT}:8091/tcp
+  - ${PUBLIC_PORT}:8081/tcp
   log_driver: ''
   labels:
     io.rancher.container.pull_image: always
