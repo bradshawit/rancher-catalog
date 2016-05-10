@@ -7,7 +7,7 @@
       description: "Public Port to access Sickrage"
       label: "Public Port"
       required: true
-      default: "8091"
+      default: "8081"
       type: "int"
     - variable: DOWNLOADS_DIR
       description: "Path to your Downloads Share"
