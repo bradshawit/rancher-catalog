@@ -33,5 +33,5 @@
       required: true
       default: "/torrentfiles"
       type: "string"
-Sonarr:
+Sickrage:
   scale: 1
