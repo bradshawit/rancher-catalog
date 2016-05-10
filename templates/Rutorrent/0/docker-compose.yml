@@ -8,7 +8,6 @@ Rutorrent:
   log_opt: {}
   image: linuxserver/rutorrent:latest
   volumes:
-  - ${RUTORRENT_DATA_DIR}:/data/rutorrent
-  - ${DOWNLOADS_DIR}:/data/downloads
-  - ${TORRENT_DIR}:/data/torrentfiles
+  - ${RUTORRENT_DATA_DIR}:/config
+  - ${DOWNLOADS_DIR}:/downloads
   stdin_open: true
