@@ -4,15 +4,11 @@ Rutorrent:
   - 9527:9527/udp
   - 45566-45576:45566-45576
   log_driver: ''
-  environment:
-    TZ: Australia/Melbourne
-    PGID: 500
-    PUID: 500
   labels:
     io.rancher.container.pull_image: always
   tty: true
   log_opt: {}
-  image: linuxserver/rutorrent:latest
+  image: linuxserver/rutorrent
   volumes:
   - ${RUTORRENT_DATA_DIR}:/config
   - ${DOWNLOADS_DIR}:/downloads
