@@ -21,11 +21,5 @@
       required: true
       default: "/rutorrent"
       type: "string"
-    - variable: TORRENT_DIR
-      description: "Path to yout Torrent Files Share"
-      label: "Torrent Files Share Path"
-      required: true
-      default: "/torrentfiles"
-      type: "string"
 Rutorrent:
   scale: 1
