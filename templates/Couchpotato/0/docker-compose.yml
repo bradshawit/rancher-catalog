@@ -8,7 +8,7 @@ Couchpotato:
   log_opt: {}
   image: bradshawit/couchpotato
   volumes:
-  - ${COUHPOTATO_DATA_DIR}:/config
-  - ${DOWNLOADS_DIR}:/downloads
-  - ${MOVIES_DIR}:/movies
+  - ${COUHPOTATO_DATA_DIR}:/data/couchpotato
+  - ${DOWNLOADS_DIR}:/data/downloads
+  - ${MOVIES_DIR}:/data/movies
   stdin_open: true
