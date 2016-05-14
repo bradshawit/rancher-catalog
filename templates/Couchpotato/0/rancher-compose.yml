@@ -1,0 +1,31 @@
+.catalog:
+  name: "Couchpotato"
+  version: "v0.8"
+  description: "Couchpotato"
+  questions:
+    - variable: PUBLIC_PORT
+      description: "Public Port to access Couchpotato"
+      label: "Public Port"
+      required: true
+      default: "5050"
+      type: "int"
+    - variable: DOWNLOADS_DIR
+      description: "Path to your Downloads Share"
+      label: "Downloads Share Path"
+      required: true
+      default: "/downloads"
+      type: "string"
+    - variable: MOVIES_DIR
+      description: "Path to your Downloads Share"
+      label: "Downloads Share Path"
+      required: true
+      default: "/movies"
+      type: "string"
+    - variable: COUCHPOTATO_DATA_DIR
+      description: "Path to store your Couchpotato configuration data"
+      label: "Couchpotato data directory"
+      required: true
+      default: "/couchpotato"
+      type: "string"
+Rutorrent:
+  scale: 1
