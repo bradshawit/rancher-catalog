@@ -1,0 +1,14 @@
+Couchpotato:
+  ports:
+  - ${PUBLIC_PORT}:5050/tcp
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  log_opt: {}
+  image: bradshawit/couchpotato
+  volumes:
+  - ${COUHPOTATO_DATA_DIR}:/config
+  - ${DOWNLOADS_DIR}:/downloads
+  - ${MOVIES_DIR}:/movies
+  stdin_open: true
