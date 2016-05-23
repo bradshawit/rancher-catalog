@@ -8,7 +8,8 @@ Couchpotato:
   log_opt: {}
   image: bradshawit/couchpotato
   volumes:
-  - ${COUCHPOTATO_DATA_DIR}:/data/couchpotato
+  - couchpotato:/data/couchpotato
   - ${DOWNLOADS_DIR}:/data/downloads
   - ${MOVIES_DIR}:/data/movies
   stdin_open: true
+  volume_driver: convoy-nfs
