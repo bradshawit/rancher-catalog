@@ -1,1 +1,17 @@
-
+ines (15 sloc)  348 Bytes
+Sickrage:
+  ports:
+  - ${PUBLIC_PORT}:8081/tcp
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  log_opt: {}
+  image: bradshawit/sickrage:latest
+  volumes:
+  - ${SICKRAGE_DATA_DIR}:/data/sickrage
+  - ${TV_DIR}:/data/tv
+  - ${DOWNLOADS_DIR}:/data/downloads
+  - ${TORRENT_DIR}:/data/torrentfiles
+  stdin_open: true
+  volume_driver: convoy-nfs
