@@ -1,1 +1,37 @@
-
+.catalog:
+  name: "Sickrage"
+  version: "v0.9"
+  description: "Sickrage with Convoy"
+  questions:
+    - variable: PUBLIC_PORT
+      description: "Public Port to access Sickrage"
+      label: "Public Port"
+      required: true
+      default: "8081"
+      type: "int"
+    - variable: DOWNLOADS_DIR
+      description: "Path to your Downloads Share"
+      label: "Downloads Share Path"
+      required: true
+      default: "/downloads"
+      type: "string"
+    - variable: SICKRAGE_DATA_DIR
+      description: "Path to store your Sickrage configuration data"
+      label: "Sickrage data directory"
+      required: true
+      default: "/sickrage"
+      type: "string"
+    - variable: TV_DIR
+      description: "Path to yout TV Share"
+      label: "TV Share Path"
+      required: true
+      default: "tv"
+      type: "string"
+    - variable: TORRENT_DIR
+      description: "Path to yout Torrent Files Share"
+      label: "Torrent Files Share Path"
+      required: true
+      default: "/torrentfiles"
+      type: "string"
+Sickrage:
+  scale: 1
