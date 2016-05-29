@@ -2,6 +2,7 @@ Rutorrent:
   ports:
   - ${PUBLIC_PORT}:80/tcp
   - 9527:9527/udp
+  - 5000:5000/tcp
   - 45566:45566/tcp
   - 45568:45568/tcp
   - 45569:45569/tcp
