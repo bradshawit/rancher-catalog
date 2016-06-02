@@ -13,4 +13,4 @@ Sickrage:
   - ${DOWNLOADS_DIR}:/data/downloads
   - ${TORRENT_DIR}:/data/torrentfiles
   stdin_open: true
-  volume_driver: convoy-nfs
+  volume_driver: convoy-data
