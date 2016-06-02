@@ -12,4 +12,4 @@ Couchpotato:
   - ${DOWNLOADS_DIR}:/data/downloads
   - ${MOVIES_DIR}:/data/movies
   stdin_open: true
-  volume_driver: convoy-nfs
+  volume_driver: convoy-data
