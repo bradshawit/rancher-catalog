@@ -1,0 +1,16 @@
+Unifi:
+  ports:
+  - $8084:8080/tcp
+  - $8083:8081/tcp
+  - ${PUBLIC_PORT}:8443/tcp
+  - $8880:8880/tcp
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  log_opt: {}
+  image: linuxserver/unifi:latest
+  volumes:
+  - ${UNIFI_DATA_DIR}:/config
+  stdin_open: true
+  volume_driver: convoy-data
