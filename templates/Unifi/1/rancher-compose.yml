@@ -1,0 +1,19 @@
+.catalog:
+  name: "Unifi"
+  version: "v0.9"
+  description: "Unifi with Convoy"
+  questions:
+    - variable: PUBLIC_PORT
+      description: "Public Port to access Sickrage"
+      label: "Public Port"
+      required: true
+      default: "8443"
+      type: "int"
+    - variable: UNIFI_DATA_DIR
+      description: "Path to store your Unifi configuration data"
+      label: "Unifi data directory"
+      required: true
+      default: "unifi"
+      type: "string"
+Unifi:
+  scale: 1
