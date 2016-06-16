@@ -11,5 +11,6 @@ Couchpotato:
   - couchpotato:/data/couchpotato
   - ${DOWNLOADS_DIR}:/data/downloads
   - ${MOVIES_DIR}:/data/movies
+  - /etc/localtime:/etc/localtime:ro
   stdin_open: true
   volume_driver: convoy-data
