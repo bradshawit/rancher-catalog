@@ -1,0 +1,19 @@
+.catalog:
+  name: "Jackett"
+  version: "v0.9"
+  description: "Jackett with Convoy"
+  questions:
+    - variable: PUBLIC_PORT
+      description: "Public Port to access Sickrage"
+      label: "Public Port"
+      required: true
+      default: "9117"
+      type: "int"
+    - variable: JACKETT_DATA_DIR
+      description: "Path to store your Jackett configuration data"
+      label: "Jackett data directory"
+      required: true
+      default: "sickrage"
+      type: "string"
+Jackett:
+  scale: 1
