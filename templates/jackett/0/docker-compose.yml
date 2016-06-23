@@ -1,0 +1,13 @@
+Jackett:
+  ports:
+  - ${PUBLIC_PORT}:9117/tcp
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  log_opt: {}
+  image: bradshawit/jackett:latest
+  volumes:
+  - ${JACKETT_DATA_DIR}:/data/jackett
+  stdin_open: true
+  volume_driver: convoy-data
