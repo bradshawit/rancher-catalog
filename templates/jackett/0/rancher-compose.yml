@@ -13,7 +13,7 @@
       description: "Path to store your Jackett configuration data"
       label: "Jackett data directory"
       required: true
-      default: "sickrage"
+      default: "jackett"
       type: "string"
 Jackett:
   scale: 1
