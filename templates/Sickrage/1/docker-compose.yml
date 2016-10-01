@@ -13,4 +13,4 @@ Sickrage:
   - ${DOWNLOADS_DIR}:/data/downloads
   - /etc/localtime:/etc/localtime:ro
   stdin_open: true
-  volume_driver: convoy
+  volume_driver: convoy-data
