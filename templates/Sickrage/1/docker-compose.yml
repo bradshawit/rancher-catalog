@@ -11,6 +11,6 @@ Sickrage:
   - ${SICKRAGE_DATA_DIR}:/data/sickrage
   - ${TV_DIR}:/data/tv
   - ${DOWNLOADS_DIR}:/data/downloads
-  - ${TORRENT_DIR}:/data/torrentfiles
+  - /etc/localtime:/etc/localtime:ro
   stdin_open: true
   volume_driver: convoy-data
