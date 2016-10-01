@@ -27,11 +27,5 @@
       required: true
       default: "/tv"
       type: "string"
-    - variable: TORRENT_DIR
-      description: "Path to yout Torrent Files Share"
-      label: "Torrent Files Share Path"
-      required: true
-      default: "/torrentfiles"
-      type: "string"
 Sickrage:
   scale: 1
