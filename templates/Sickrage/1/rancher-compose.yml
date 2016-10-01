@@ -25,7 +25,7 @@
       description: "Path to yout TV Share"
       label: "TV Share Path"
       required: true
-      default: "tv"
+      default: "/tv"
       type: "string"
     - variable: TORRENT_DIR
       description: "Path to yout Torrent Files Share"
