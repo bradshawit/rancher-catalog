@@ -19,7 +19,7 @@
       description: "Path to store your Sickrage configuration data"
       label: "Sickrage data directory"
       required: true
-      default: "sickrage"
+      default: "sickragedata"
       type: "string"
     - variable: TV_DIR
       description: "Path to yout TV Share"
