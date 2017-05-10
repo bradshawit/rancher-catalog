@@ -19,7 +19,7 @@ Rutorrent:
     io.rancher.container.pull_image: always
   tty: true
   log_opt: {}
-  image: linuxserver/rutorrent:75
+  image: linuxserver/rutorrent
   volumes:
   - ${RUTORRENT_DATA_DIR}:/config
   - ${DOWNLOADS_DIR}:/downloads
