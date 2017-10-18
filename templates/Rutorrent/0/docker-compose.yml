@@ -14,6 +14,9 @@ Rutorrent:
   - 45575:45575/tcp
   - 45576:45576/tcp
   - 51413:51413/tcp
+  environment:
+  - PGID=911
+  - PGID=911
   log_driver: ''
   labels:
     io.rancher.container.pull_image: always
